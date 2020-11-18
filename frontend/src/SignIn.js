@@ -18,7 +18,7 @@ class SignIn extends Component{
         return(
             <div className = "container">
                 <form onSubmit={this.handlSubmit} className="white">
-                    <h5 className="grey-text text-darken-3">Admin log in page</h5>
+                    <h5 className="grey-text text-darken-3">Admin logIn page</h5>
                     <div className="input-field">
                         <label htmlFor="email">Email</label>
                         <input type="email" id = "email" onChange={this.handleChange}/>
