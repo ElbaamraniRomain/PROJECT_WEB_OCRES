@@ -7,7 +7,7 @@ const widgget_1 = () => {
             <div className="card z-depth-0 widget_1-summary">
                 <div className="card-content gray-text text-darken-3">
                     <span className="card-title">Widget 1</span>
-                    <p>widget content</p>
+                    {/* <p>widget content</p> */}
                 </div>
             </div>
         </div>

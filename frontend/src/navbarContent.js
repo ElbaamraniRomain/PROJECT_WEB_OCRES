@@ -4,11 +4,11 @@ import { NavLink } from 'react-router-dom'
 const adminLogin = () => {
     return(
        <ul className="right">
-            <li>
+           {/* <li>
                <NavLink to="/">Dashboard</NavLink>
-           </li>
+           </li> */}
            <li>
-               <NavLink to="/">Admin Page</NavLink>
+               <NavLink to="/SignIn">Admin Page</NavLink>
            </li>
        </ul>
     
