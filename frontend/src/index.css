@@ -8,6 +8,10 @@ body {
   font-family: sans-serif;
   /* background: url(/img/background.jpg) no-repeat; */
   background-size: 100%;
+  /* background: rgb(20,173,177);
+  background: linear-gradient(112deg, rgba(20,173,177,1) 16%, rgba(20,220,157,1) 51%, rgba(20,241,205,1) 78%, rgba(0,212,255,1) 100%); */
+  /* background: rgb(238,174,202);
+  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%); */
 }
 form{
   padding: 20px;
@@ -35,14 +39,14 @@ form button, form h5{
   display: inline-block;
   margin: 30px auto;
   background-color: rgba(255, 255, 255, 0.2);
-  border-radius: 16px;
+  /* border-radius: 16px; */
 
-  padding: 15px 25px;
-  font-size: 102px;
+  /* padding: 15px 25px; */
+  font-size: 80px;
 
-  text-shadow: 3px 6px rgba(50, 50, 70, 0.5);
+  /* text-shadow: 3px 6px rgba(50, 50, 70, 0.5); */
   text-align: center;
-  box-shadow: 3px 6px rgba(0, 0, 0, 0.2);
+  /* box-shadow: 3px 6px rgba(0, 0, 0, 0.2); */
 }
 
 .weather-box .weather{
@@ -50,6 +54,13 @@ form button, form h5{
   font-weight: 700;
   text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
 }
+.weather-box .weather-icon{
+  width: 150px;
+}
 .app{
   transition: 0.4 ease;
 }
+.card-content{
+  border-color: black;
+}
+

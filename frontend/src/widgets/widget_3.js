@@ -1,37 +1,35 @@
 import React from 'react';
+import {RadialBarChart, RadialBar, Legend} from 'recharts'
 
+const data = [
+	{
+		name: '18-24', uv: 31.47, pv: 2400, fill: '#8884d8',
+	},
+	{
+		name: '25-29', uv: 26.69, pv: 4567, fill: '#83a6ed',
+	},
+	{
+		name: '30-34', uv: 15.69, pv: 1398, fill: '#8dd1e1',
+	},
+	{
+		name: '35-39', uv: 8.22, pv: 9800, fill: '#82ca9d',
+	},
+	{
+		name: '40-49', uv: 8.63, pv: 3908, fill: '#a4de6c',
+	},
+	{
+		name: '50+', uv: 2.63, pv: 4800, fill: '#d0ed57',
+	},
+	{
+		name: 'unknow', uv: 6.67, pv: 4800, fill: '#ffc658',
+	},
+];
 
-// function searchWeather(city) {
-//     console.info(city)
-//     // Création de l'objet apiWeather
-//     const apiWeather = new API_WEATHER(city);
-//     // Appel de la fonction fetchTodayForecast
-  
-//     apiWeather
-//       .fetchTodayForecast()
-//       .then(function (response) {
-//         // Récupère la donnée d'une API
-//         const data = response.data.list;
-  
-//         for (let i = 0; i < 4; i++) {
-//           // On récupère l'information principal
-//           const main = data[i].weather[0].main;
-//           const description = data[i].weather[0].description;
-//           const temp = data[i].temp.day;
-//           const icon = apiWeather.getHTMLElementFromIcon(data[i].weather[0].icon);
-  
-//           // Modifier le DOM
-//           document.getElementById(`day${i}-forecast-main`).innerHTML = main;
-//           document.getElementById(`day${i}-forecast-more-info`).innerHTML = description;
-//           document.getElementById(`day${i}-icon-weather-container`).innerHTML = icon;
-//           document.getElementById(`day${i}-forecast-temp`).innerHTML = `${temp}°C`;
-//         }
-//       })
-//       .catch(function (error) {
-//         // Affiche une erreur
-//         console.error(error);
-//       });
-//   }
+const style = {
+	top: 0,
+	left: 350,
+	lineHeight: '24px',
+};
 
 const Widget3 = () => {
     return(
@@ -39,19 +37,14 @@ const Widget3 = () => {
             <div className="card z-depth-0 Widget_1-summary">
                 <div className="card-content gray-text text-darken-3">
                     <span className="card-title">Widget 3</span>
-                    {/* <p>Widget content</p> */}
-                    {/* <div class="container">
-                        <div class="input-group mb-5 offset-4 col-4">
-                            <input id="city-input" type="text" class="form-control" placeholder="Rentrer le nom d'une ville"/>
-                            <div class="input-group-append">
-                                <button id="city-input-button" class="btn btn-success" type="submit" onclick="SearchWeather(document.getElementById('city-input').value)">Actualiser</button>
-                            </div>
-                        </div>
-                    </div>                     */}
                     </div>
                 </div>
-                {/* <script src="API_Weather.js"></script>
-                <script src="script.js"></script> */}
+                
+                <RadialBarChart width={500} height={300} cx={150} cy={150} innerRadius={20} outerRadius={140} barSize={10} data={data}>
+                    <RadialBar minAngle={15} label={{ position: 'insideStart', fill: '#fff' }} background clockWise dataKey="uv" />
+                    <Legend iconSize={10} width={120} height={140} layout="vertical" verticalAlign="middle" wrapperStyle={style}  />
+                </RadialBarChart>
+
             </div>
     )
 }

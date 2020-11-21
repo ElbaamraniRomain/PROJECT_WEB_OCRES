@@ -58,7 +58,8 @@ const Widget2 = () => {
                                 <div className="temp">
                                 {Math.round(weather.main.temp)}°c
                                 </div>
-                                <div className="weather">{weather.weather[0].main}</div>
+                                {/* <div className="weather">{weather.weather[0].main}</div> */}
+                                <div><img className = "weather-icon" src={`http://openweathermap.org/img/wn/${weather.weather[0].icon}@4x.png`} alt=""/></div>
                             </div>
                             </div>
                             ) : ('')}
