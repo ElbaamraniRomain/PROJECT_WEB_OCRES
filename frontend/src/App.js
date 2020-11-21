@@ -4,6 +4,8 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom'
 import dashboard from './widgets/dashboard'
 import SignIn from './SignIn'
 import addDataApi from './addDataApi'
+import 'antd/dist/antd.css';
+
 function App() {
   return (
     <BrowserRouter>

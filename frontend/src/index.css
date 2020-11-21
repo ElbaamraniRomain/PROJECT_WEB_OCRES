@@ -10,8 +10,8 @@ body {
   background-size: 100%;
   /* background: rgb(20,173,177);
   background: linear-gradient(112deg, rgba(20,173,177,1) 16%, rgba(20,220,157,1) 51%, rgba(20,241,205,1) 78%, rgba(0,212,255,1) 100%); */
-  /* background: rgb(238,174,202);
-  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%); */
+  background: rgb(238,174,202);
+  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
 }
 form{
   padding: 20px;
@@ -38,7 +38,7 @@ form button, form h5{
   position: relative;
   display: inline-block;
   margin: 30px auto;
-  background-color: rgba(255, 255, 255, 0.2);
+  /* background-color: rgba(255, 255, 255, 0.2); */
   /* border-radius: 16px; */
 
   /* padding: 15px 25px; */
@@ -60,7 +60,8 @@ form button, form h5{
 .app{
   transition: 0.4 ease;
 }
-.card-content{
-  border-color: black;
+.card{
+  border-radius: 8px !important;
+  background-color: rgba(146, 90, 175, 0.25);
 }
 

@@ -4,7 +4,7 @@ const api = {
     base:"https://api.openweathermap.org/data/2.5/"
 }
 
-const Widget2 = () => {
+const Widget1 = () => {
     const [query, setQuery] = useState('');
     const [weather, setWeather] = useState({});
     const search = evt =>{
@@ -71,4 +71,4 @@ const Widget2 = () => {
     )
 }
 
-export default Widget2
+export default Widget1
