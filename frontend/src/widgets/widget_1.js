@@ -1,30 +1,73 @@
-import React from 'react';
-import { LineChart, Line, CartesianGrid, XAxis, YAxis, Tooltip } from 'recharts';
+import React, { useState } from 'react';
+const api = {
+    key:"85653a68344e22e319dfeae04503dcbd",
+    base:"https://api.openweathermap.org/data/2.5/"
+}
 
-const data = [{name: 'Page A', uv: 400, pv: 2400, amt: 2400},
-{name: 'Page B', uv: 300, pv: 2400, amt: 2400},
-{name: 'Page C', uv: 300, pv: 2400, amt: 2400},
-{name: 'Page D', uv: 200, pv: 2400, amt: 2400},
-{name: 'Page E', uv: 275, pv: 2400, amt: 2400},
-{name: 'Page F', uv: 190, pv: 2400, amt: 2400}];
-const Widget1 = () => {
+const Widget2 = () => {
+    const [query, setQuery] = useState('');
+    const [weather, setWeather] = useState({});
+    const search = evt =>{
+        if(evt.key === "Enter"){
+            fetch(`${api.base}weather?q=${query}&units=metric&APPID=${api.key}`)
+            .then(res => res.json())
+            .then(result => {
+                setWeather(result);
+                setQuery('');
+                console.log(result);
+            });
+        }
+    }
+
+    const dateBuilder = (d) => {
+        let months = ["Janvier", "fevrier", "Mars", "Avril", "Mai", "Juin", "Juillet", "Aout", "Septembre", "Octobre", "Novembre", "Decembre"];
+        let days = ["Dimanche", "Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi"];   
+        
+        let day = days[d.getDay()];
+        let date = d.getDate();
+        let month = months[d.getMonth()];
+        let year = d.getFullYear();
+
+        return `${day} ${date} ${month} ${year}`
+    }
     return(
         <div className="Widget section">
             <div className="card z-depth-0 Widget_1-summary">
                 <div className="card-content gray-text text-darken-3">
                     <span className="card-title">Widget 1</span>
-                        <LineChart width={600} height={300} data={data} margin={{ top: 5, right: 20, bottom: 5, left: 0 }}>
-                            <Line type="monotone" dataKey="uv" stroke="#8884d8" />
-                            <CartesianGrid stroke="#ccc" strokeDasharray="5 5" />
-                            <XAxis dataKey="name" />
-                            <YAxis />
-                            <Tooltip />
-                        </LineChart>
                     {/* <p>Widget content</p> */}
+                    <div className={(typeof weather.main != "undefined") ? ((weather.main.temp > 16) ? 'app warm' : 'app') : 'app'}>
+                        <main>
+                            <div className="search-box">
+                            <input 
+                                type="text"
+                                className="search-bar"
+                                placeholder="Search..."
+                                onChange={e => setQuery(e.target.value)}
+                                value={query}
+                                onKeyPress={search}
+                            />
+                            </div>
+                            {(typeof weather.main != "undefined") ? (
+                            <div>
+                            <div className="location-box">
+                                <div className="location">{weather.name}, {weather.sys.country}</div>
+                                <div className="date">{dateBuilder(new Date())}</div>
+                            </div>
+                            <div className="weather-box">
+                                <div className="temp">
+                                {Math.round(weather.main.temp)}°c
+                                </div>
+                                <div className="weather">{weather.weather[0].main}</div>
+                            </div>
+                            </div>
+                            ) : ('')}
+                        </main>
+                    </div>
                 </div>
             </div>
         </div>
     )
 }
 
-export default Widget1
+export default Widget2
