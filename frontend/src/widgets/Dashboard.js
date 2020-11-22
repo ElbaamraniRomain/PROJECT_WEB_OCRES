@@ -14,11 +14,11 @@ class dashboard extends Component {
     render() {
         return (
             <Container>
-                {/* <Col lg-4> */}
-                    <Row className="justify-content-lg-center">
-                        <Buttons text="day" /><Buttons text="week" /><Buttons text="month" />
-                    </Row>
-                {/* </Col> */}
+                <Row lg-6 lg-offset-6>
+                    <Buttons text="day" />
+                    <Buttons text="week" />
+                    <Buttons text="month" />
+                </Row>
                 <Row>
                     <Col lg-3>
                         <Widget1 />

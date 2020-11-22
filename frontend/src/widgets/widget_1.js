@@ -34,7 +34,7 @@ const Widget1 = () => {
         <div className="Widget section">
             <div className="card z-depth-0 Widget_1-summary">
                 <div className="card-content gray-text text-darken-3">
-                    <span className="card-title">Widget 1</span>
+                    <span className="card-title">Météo</span>
                     {/* <p>Widget content</p> */}
                     <div className={(typeof weather.main != "undefined") ? ((weather.main.temp > 16) ? 'app warm' : 'app') : 'app'}>
                         <main>

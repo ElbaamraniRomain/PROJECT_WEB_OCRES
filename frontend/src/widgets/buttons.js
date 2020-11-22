@@ -1,11 +1,12 @@
-import React, { Component } from 'react';
-import { Button } from 'antd';
+import React from 'react';
+import { Button } from 'react-bootstrap'
 
 
 const button = ({text}) => {
     return(
-            <Button type="primary">{text}</Button>
+            <Button className = "waves-effect waves-teal btn-flat ">{text}</Button>
     )
 }
 
 export default button
+

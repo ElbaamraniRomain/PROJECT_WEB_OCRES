@@ -17,7 +17,7 @@ class SignIn extends Component{
     render(){
         return(
             <div className = "container">
-                <form onSubmit={this.handlSubmit} className="white">
+                <form onSubmit={this.handlSubmit} className="login">
                     <h5 className="grey-text text-darken-3">Admin logIn page</h5>
                     <div className="input-field">
                         <label htmlFor="email">Email</label>
