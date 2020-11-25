@@ -21,22 +21,22 @@ class dashboard extends Component {
                 </Row>
                 <Row>
                     <Col lg-3>
-                        <Widget1 />
+                        <Widget1/>
                     </Col>
                     <Col lg-9>
-                        <Widget2 />
+                        <Widget2/>
                     </Col>
                 </Row>
                 <Row>
                     <Col lg-6>
-                        <Widget3 />
-                        <Widget4 />
+                        <Widget3/>
+                        <Widget4/>
                     </Col>
                     <Col lg-3>
-                        <Widget5 />
+                        <Widget5/>
                     </Col>
                     <Col lg-3>
-                        <Widget6 />
+                        <Widget6/>
                     </Col>
                 </Row>
             </Container>
