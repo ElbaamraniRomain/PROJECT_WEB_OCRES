@@ -4,6 +4,7 @@ import { BiCycling } from 'react-icons/bi'
 import { BiSwim } from 'react-icons/bi'
 import { FaRunning } from 'react-icons/fa'
 
+
 const data = [
 	{
 		name: 'course', distance: 20, pv: 2400, fill: '#8884d8', icon: FaRunning,
@@ -18,7 +19,7 @@ const data = [
 
 const style = {
 	top: 0,
-	left: 350,
+	left: 300,
 	lineHeight: '24px',
 };
 

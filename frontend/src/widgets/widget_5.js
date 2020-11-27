@@ -1,6 +1,5 @@
 import React from 'react';
 
-
 const Widget5 = () => {
     return(
         <div className="Widget section">

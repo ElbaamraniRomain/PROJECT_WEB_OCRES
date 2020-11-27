@@ -1,5 +1,8 @@
 import React from 'react';
 import { RadarChart, PolarGrid, PolarAngleAxis, PolarRadiusAxis, Radar, Legend } from 'recharts'
+import Container from 'react-bootstrap/Container'
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/col'
 
 const data = [
     {
@@ -22,7 +25,7 @@ const Widget4 = () => {
             <div className="card z-depth-0 Widget_1-summary">
                 <div className="card-content gray-text text-darken-3">
                     <span className="card-title">Widget 4</span>
-                    <RadarChart cx={300} cy={250} outerRadius={150} width={500} height={500} data={data}>
+                    <RadarChart cx={230} cy={200} outerRadius={100} width={450} height={450} data={data}>
                         <PolarGrid />
                         <PolarAngleAxis dataKey="subject" />
                         <PolarRadiusAxis />

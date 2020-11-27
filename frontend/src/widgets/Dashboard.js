@@ -13,29 +13,36 @@ import Col from 'react-bootstrap/col'
 class dashboard extends Component {
     render() {
         return (
+            
             <Container>
-                <Row lg-6 lg-offset-6>
+                <Row lg={6}>
                     <Buttons text="day" />
                     <Buttons text="week" />
                     <Buttons text="month" />
                 </Row>
+
                 <Row>
-                    <Col lg-3>
+                    <Col xl={6} md={8} sm={12}>
                         <Widget1/>
                     </Col>
-                    <Col lg-9>
+
+                    <Col xl={6} md={8} sm={12}>
                         <Widget2/>
                     </Col>
-                </Row>
-                <Row>
-                    <Col lg-6>
+
+                    <Col xl={6} md={8} sm={12}>
                         <Widget3/>
+                    </Col>
+
+                    <Col xl={6} md={8} sm={12}>
                         <Widget4/>
                     </Col>
-                    <Col lg-3>
+
+                    <Col xl={6} md={8} sm={12}>
                         <Widget5/>
                     </Col>
-                    <Col lg-3>
+
+                    <Col xl={6} md={8} sm={12}>
                         <Widget6/>
                     </Col>
                 </Row>
