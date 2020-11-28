@@ -18,7 +18,9 @@ const Widget6 = () => {
         }, [query]);
     
     const getRecipes = async() =>{
-        const response = await fetch(`https://api.edamam.com/search?q=${query}&app_id=${APP_ID}&app_key=${APP_KEY}&from=0&to=1`);
+        const from = Math.floor(Math.random() * 9);
+        const to = from+1;
+        const response = await fetch(`https://api.edamam.com/search?q=${query}&app_id=${APP_ID}&app_key=${APP_KEY}&from=${from}&to=${to}`);
         const data = await response.json();
         console.log(data.hits[0]);
         setRecipes(data.hits);

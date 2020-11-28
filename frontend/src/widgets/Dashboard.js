@@ -14,32 +14,71 @@ class dashboard extends Component {
     render() {
         return (
             <Container>
-                <Row lg-6 lg-offset-6>
+                <Row lg={6}>
                     <Buttons text="day" />
                     <Buttons text="week" />
                     <Buttons text="month" />
                 </Row>
                 <Row>
-                    <Col lg-3>
-                        <Widget1/>
+                    <Col lg={3}>
+                        <Widget1 />
                     </Col>
-                    <Col lg-9>
-                        <Widget2/>
+                    <Col lg={9}>
+                        <Widget2 />
                     </Col>
                 </Row>
                 <Row>
-                    <Col lg-6>
-                        <Widget3/>
-                        <Widget4/>
+                    <Col lg={6}>
+                        <Widget3 />
                     </Col>
-                    <Col lg-3>
-                        <Widget5/>
+                    <Col lg={6}>
+                        <Widget4 />
                     </Col>
-                    <Col lg-3>
-                        <Widget6/>
+                </Row>
+                <Row>
+                    <Col lg={6}>
+                        <Widget5 />
+                    </Col>
+                    <Col lg={6}>
+                        <Widget6 />
                     </Col>
                 </Row>
             </Container>
+            // // <Container>
+            // //     <Row lg={6}>
+            // //         <Buttons text="day" />
+            // //         <Buttons text="week" />
+            // //         <Buttons text="month" />
+            // //     </Row>
+
+            //     <Row>
+            //         <Col xl={3} md={4} sm={12}>
+            //             <Widget1 />
+            //         </Col>
+
+            //         <Col xl={9} md={8} sm={12}>
+            //             <Widget2 />
+            //         </Col>
+            //     </Row>
+            //     <Row>
+
+            //         <Col xl={6} md={8} sm={12}>
+            //             <Widget3 />
+            //         </Col>
+
+            //         <Col xl={6} md={8} sm={12}>
+            //             <Widget4 />
+            //         </Col>
+
+            //         <Col xl={6} md={8} sm={12}>
+            //             <Widget5 />
+            //         </Col>
+
+            //         <Col xl={6} md={8} sm={12}>
+            //             <Widget6 />
+            //         </Col>
+            //     </Row>
+            // </Container>
         )
     }
 }
