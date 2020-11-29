@@ -1,5 +1,5 @@
 # Projet de fin de semestre
-EL Baamrani Romain
+EL Baamrani Romain/Duong Pierre
 A lire impérativement avant de commencer quoi que ce soit, ce sont les règles que vous devrez appliquer tout au long du semestre:
 
 <p align="center">
