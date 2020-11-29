@@ -8,6 +8,29 @@ Storybook est là pour vous aider à prototyper et documenter vos composants. Si
 
 ## Documentation
 
-Vous pourrez supprimer le contenu de ce README et vous l'approprier en y notant les éléments importants de votre projet. Il est très important de bien documenter un projet !
+### EL Baamrani Romain - Duong Pierre
 
-Inspirez-vous des grands repos open sources qui existent sur github. Les informations qui reviennent souvent sont une description du projet (pourquoi, comment...), la maniere de lancer le projet et eventuellement d'y contribuer, une documentation sur des éléments que vous voulez mettre en avant et pour finir les noms des contributeurs.
+![alt text](public/img/Dashboard.png)
+![alt text](public/img/Admin_login.png)
+
+### Pour accéder aux storybooks
+```shell
+$ npm run storybook
+```
+![alt text](public/img/storybook_1.png)
+![alt text](public/img/storybook_2.png)
+
+### installation du package et lancement
+
+```shell
+$ npm install
+```
+
+```shell
+$ npm start
+```
+
+### Trello
+lien: https://trello.com/b/P4PnWpMG/projet-web-frontend
+
+
