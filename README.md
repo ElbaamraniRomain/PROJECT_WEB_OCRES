@@ -1,5 +1,9 @@
 # Projet de fin de semestre
+<<<<<<< HEAD
 ## EL Baamrani Romain - Duong Pierre
+=======
+EL Baamrani Romain/Duong Pierre
+>>>>>>> 8e5afca1ca6d012482208d5449107b15ecc08557
 A lire impérativement avant de commencer quoi que ce soit, ce sont les règles que vous devrez appliquer tout au long du semestre:
 
 <p align="center">

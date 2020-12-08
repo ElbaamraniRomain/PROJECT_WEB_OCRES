@@ -41,7 +41,7 @@ const Widget6 = () => {
         <div className="Widget section">
             <div className="card z-depth-0 Widget_1-summary">
                 <div className="card-content gray-text text-darken-3">
-                    <span className="card-title">Widget 6</span>
+                    <span className="card-title">Idée recette</span>
                     <form onSubmit = {getSearch} className = "search-form">
                         <input placeholder="Search..." type = "text" onChange = {updateSearch}/>
                         <button className = "btn orange lighten-1" type = "submit">Search</button>

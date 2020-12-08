@@ -8,6 +8,7 @@ Storybook est là pour vous aider à prototyper et documenter vos composants. Si
 
 ## Documentation
 
+<<<<<<< HEAD
 ### EL Baamrani Romain - Duong Pierre
 
 ![alt text](public/img/Dashboard.png)
@@ -34,3 +35,24 @@ $ npm start
 lien: https://trello.com/b/P4PnWpMG/projet-web-frontend
 
 
+=======
+![alt text](public/img/Dashboard.png)
+![alt text](public/img/Admin_login.png)
+
+### Pour accéder aux storybooks
+$ npm run storybook
+
+![alt text](public/img/storybook_1.png)
+![alt text](public/img/storybook_2.png)
+
+### installation du package et lancement
+
+$ npm install
+
+
+$ npm start
+
+
+### Trello
+lien: https://trello.com/b/P4PnWpMG/projet-web-frontend
+>>>>>>> 8e5afca1ca6d012482208d5449107b15ecc08557
