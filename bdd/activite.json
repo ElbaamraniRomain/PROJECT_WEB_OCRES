@@ -1,0 +1,132 @@
+[{
+  "_id": {
+    "$oid": "5fcfac51308eeb7e7f9450f2"
+  },
+  "type_activite": "course",
+  "calories": 600,
+  "distance": 10,
+  "temps": 110,
+  "date": {
+    "$date": "2020-12-12T23:00:00Z"
+  }
+},{
+  "_id": {
+    "$oid": "5fcfae74308eeb7e7f9450f3"
+  },
+  "type_activite": "course",
+  "calories": 300,
+  "distance": 5,
+  "temps": 35,
+  "date": {
+    "$date": "2020-12-11T23:00:00Z"
+  }},{
+  "_id": {
+    "$oid": "5fcfaea1308eeb7e7f9450f4"
+  },
+  "type_activite": "course",
+  "calories": 1100,
+  "distance": 20,
+  "temps": 120,
+  "date": {
+    "$date": "2020-12-10T23:00:00Z"
+  }},{
+  "_id": {
+    "$oid": "5fcfaec7308eeb7e7f9450f5"
+  },
+  "type_activite": "course",
+  "calories": 350,
+  "distance": 5,
+  "temps": 25,
+  "date": {
+    "$date": "2020-12-09T23:00:00Z"
+  }},{
+  "_id": {
+    "$oid": "5fcfaee3308eeb7e7f9450f6"
+  },
+  "type_activite": "course",
+  "calories": 750,
+  "distance": 30,
+  "temps": 60,
+  "date": {
+    "$date": "2020-12-08T23:00:00Z"
+  }},{
+  "_id": {
+    "$oid": "5fcfaf7e308eeb7e7f9450f7"
+  },
+  "type_activite": "cyclisme",
+  "calories": 256,
+  "distance": 9,
+  "temps": 31,
+  "date": {
+    "$date": "2020-12-12T23:00:00Z"
+  }},{
+  "_id": {
+    "$oid": "5fcfafac308eeb7e7f9450f8"
+  },
+  "type_activite": "cyclisme",
+  "calories": 422,
+  "distance": 10,
+  "temps": 31,
+  "date": {
+    "$date": "2020-12-11T23:00:00Z"
+  }},{
+  "_id": {
+    "$oid": "5fcfafca308eeb7e7f9450f9"
+  },
+  "type_activite": "cyclisme",
+  "calories": 432,
+  "distance": 9,
+  "temps": 34,
+  "date": {
+    "$date": "2020-12-10T23:00:00Z"
+  }},{
+  "_id": {
+    "$oid": "5fcfafee308eeb7e7f9450fa"
+  },
+  "type_activite": "cyclisme",
+  "calories": 370,
+  "distance": 13,
+  "temps": 46,
+  "date": {
+    "$date": "2020-12-09T23:00:00Z"
+  }},{
+  "_id": {
+    "$oid": "5fcfb08f308eeb7e7f9450fb"
+  },
+  "type_activite": "natation",
+  "calories": 340,
+  "distance": 1,
+  "temps": 30,
+  "date": {
+    "$date": "2020-12-12T23:00:00Z"
+  }},{
+  "_id": {
+    "$oid": "5fcfb0b0308eeb7e7f9450fc"
+  },
+  "type_activite": "natation",
+  "calories": 380,
+  "distance": 2,
+  "temps": 60,
+  "date": {
+    "$date": "2020-12-11T23:00:00Z"
+  }},{
+  "_id": {
+    "$oid": "5fcfb0c9308eeb7e7f9450fd"
+  },
+  "type_activite": "natation",
+  "calories": 400,
+  "distance": 3,
+  "temps": 110,
+  "date": {
+    "$date": "2020-12-10T23:00:00Z"
+  }},{
+  "_id": {
+    "$oid": "5fcfb0c9308eeb7e7f9450fd"
+  },
+  "type_activite": "natation",
+  "calories": 200,
+  "distance": 2,
+  "temps": 60,
+  "date": {
+    "$date": "2020-12-09T23:00:00Z"
+  }}]
