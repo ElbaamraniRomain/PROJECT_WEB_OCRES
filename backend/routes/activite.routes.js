@@ -93,12 +93,6 @@ router.get('/distancesMonth', (req, res) => {
         });
 });
 
-
-/* GET distance cyclisme day. */
-
-/* GET distance cyclisme week. */
-/* GET distance cyclisme month. */
-
 /* GET calories day. */
 /* GET calories week. */
 /* GET calories month. */
