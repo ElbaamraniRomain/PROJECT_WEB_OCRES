@@ -80,11 +80,7 @@ router.get('/distancesMonth', (req, res) => {
     console.log('last day of the month: ', lastdayMonth);
     Activite.aggregate([
         {
-            $match: {
-                $and: [
-                    { date: { $gte: firstdayMonth, $lte: lastdayMonth } }
-                ]
-            }
+            $match: { date: { $gte: firstdayMonth, $lte: lastdayMonth} }
         },
         { $group: { _id: "$type_activite", distance: { $sum: "$distance" } } },
     ])
@@ -115,11 +111,7 @@ router.get('/caloriesMonth', (req, res) => {
     console.log('last day of the month: ', lastdayMonth);
     Activite.aggregate([
         {
-            $match: {
-                $and: [
-                    { date: { $gte: firstdayMonth, $lte: lastdayMonth } }
-                ]
-            }
+            $match: { date: { $gte: firstdayMonth, $lte: lastdayMonth} }
         },
         { $group: { _id: "$type_activite", calories: { $sum: "$calories" } } },
     ])
@@ -145,11 +137,7 @@ router.get('/tempsMonth', (req, res) => {
     console.log('last day of the month: ', lastdayMonth);
     Activite.aggregate([
         {
-            $match: {
-                $and: [
-                    { date: { $gte: firstdayMonth, $lte: lastdayMonth } }
-                ]
-            }
+            $match: { date: { $gte: firstdayMonth, $lte: lastdayMonth} }
         },
         { $group: { _id: "$type_activite", temps: { $sum: "$temps" } } },
     ])
