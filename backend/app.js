@@ -4,16 +4,17 @@ var cookieParser = require("cookie-parser");
 var logger = require("morgan");
 var mongoose = require('mongoose');
 var morgan = require('morgan');
+const cors = require('cors');
 
 
 var indexRouter = require("./routes/index");
 var usersRouter = require("./routes/users");
-var activiteRoutes = require('./routes/activite.routes');
+var activiteRouter = require('./routes/activite.routes');
 
 var app = express();
 const PORT = process.env.PORT || 8080;
 
-
+app.use(cors());
 app.use(logger("dev"));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
@@ -21,7 +22,7 @@ app.use(cookieParser());
 
 app.use("/index", indexRouter);
 app.use("/users", usersRouter);
-app.use("/activite", activiteRoutes);
+app.use("/activite", activiteRouter);
 
 mongoose.Promise = global.Promise;
 const dbName = "test";

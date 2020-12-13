@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import axios from 'axios'
 
 class addDataApi extends Component {
     state = {
@@ -8,15 +9,30 @@ class addDataApi extends Component {
         data4: ''
     }
 
-    handleChange = (e) => {
-        this.setState({
-            [e.target.id]: e.target.value
-        })
-    }
-    handlSubmit = (e) => {
-        e.preventDefault();
-        console.log(this.state);
-    }
+    // handleChange = (e) => {
+    //     this.setState({
+    //         [e.target.id]: e.target.value
+    //     })
+    // }
+    // handlSubmit = (e) => {
+    //     e.preventDefault();
+    //     //console.log(this.state);
+    //     const payload = (this.state);
+
+    //     axios({
+    //         url:'http://localhost:8080/activite/addActivite',
+    //         method: 'POST',
+    //         data: payload
+    //     })
+    //     .then(() => {
+    //         console.log("data sent");
+    //     })
+    //     .catch(() => {
+    //         console.log("error")
+    //     })
+    // };
+
+
     render() {
         return (
             <div className="container">

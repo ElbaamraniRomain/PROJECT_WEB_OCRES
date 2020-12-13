@@ -4,7 +4,7 @@ import React from 'react';
 
 const button = ({text}) => {
     return(
-            <a class="waves-effect waves-teal btn-flat">{text}</a>
+            <a className="waves-effect waves-teal btn-flat">{text}</a>
     )
 }
 

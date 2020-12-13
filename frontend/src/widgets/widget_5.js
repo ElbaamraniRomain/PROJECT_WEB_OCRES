@@ -1,5 +1,9 @@
 import React from 'react';
 import { Pie, PieChart, Sector } from 'recharts';
+import simpleData from '../getBackend';
+
+const tempTime = 'm';
+const tempAct = "calories";
 
 const data = [
     { name: 'Cyclisme', value: 400, fill: '#8dd1e1' },
@@ -55,6 +59,23 @@ const renderActiveShape = (props) => {
 };
 
 class Widget5 extends React.PureComponent {
+
+    constructor(props) {
+        super(props);
+        this.state = {
+            gdata: ''
+        };
+    }
+    async componentDidMount() {
+        const queryData = await simpleData(tempAct, tempTime);
+        const gdata = [
+            { name: 'Cyclisme', value: queryData["cyclisme"], fill: '#8dd1e1' },
+            { name: 'Natation', value: queryData["natation"], fill: '#83a6ed' },
+            { name: 'Course', value: queryData["course"], fill: '#8884d8' },
+        ];
+        this.setState({ gdata });
+
+    }
     state = {
         activeIndex: 0,
     };
@@ -74,7 +95,7 @@ class Widget5 extends React.PureComponent {
                             <Pie
                                 activeIndex={this.state.activeIndex}
                                 activeShape={renderActiveShape}
-                                data={data}
+                                data={this.state.gdata}
                                 cx={200}
                                 cy={200}
                                 innerRadius={60}
