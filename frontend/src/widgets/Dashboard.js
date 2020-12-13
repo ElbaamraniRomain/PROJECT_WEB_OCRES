@@ -22,27 +22,27 @@ class dashboard extends Component {
                 </Row>
 
                 <Row>
-                    <Col xl={6} md={8} sm={12}>
+                    <Col xl={6}>
                         <Widget1/>
                     </Col>
 
-                    <Col xl={6} md={8} sm={12}>
+                    <Col xl={6}>
                         <Widget2/>
                     </Col>
 
-                    <Col xl={6} md={8} sm={12}>
+                    <Col xl={6}>
                         <Widget3/>
                     </Col>
 
-                    <Col xl={6} md={8} sm={12}>
+                    <Col xl={6}>
                         <Widget4/>
                     </Col>
 
-                    <Col xl={6} md={8} sm={12}>
+                    <Col xl={6}>
                         <Widget5/>
                     </Col>
 
-                    <Col xl={6} md={8} sm={12}>
+                    <Col xl={6}>
                         <Widget6/>
                     </Col>
                 </Row>

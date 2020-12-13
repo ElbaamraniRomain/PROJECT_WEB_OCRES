@@ -1,39 +1,37 @@
 import React from 'react';
-import { RadarChart, PolarGrid, PolarAngleAxis, PolarRadiusAxis, Radar, Legend } from 'recharts'
-import Container from 'react-bootstrap/Container'
-import Row from 'react-bootstrap/Row'
-import Col from 'react-bootstrap/col'
+import {
+    BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer
+} from 'recharts';
 
 const data = [
     {
-        subject: 'calories', natation: 7, cyclisme: 9, C: 10
+        name: 'cyclisme', uv: 4000, calories: 700, amt: 2400, fill: '#8dd1e1'
     },
     {
-        subject: 'Temps', natation: 4, cyclisme: 1, C: 5
+        name: 'natation', uv: 3000, calories: 950, amt: 2210, fill: '#83a6ed'
     },
     {
-        subject: 'Distance', natation: 6, cyclisme: 3, C: 7
+        name: 'course', uv: 2000, calories: 600, amt: 2290, fill: '#8884d8'
     },
-    {
-        subject: 'bpm max', natation: 6, cyclisme: 3, C: 7
-    }
-];
+]
+
 
 const Widget4 = () => {
+
     return (
         <div className="Widget section">
             <div className="card z-depth-0 Widget_1-summary">
                 <div className="card-content gray-text text-darken-3">
-                    <span className="card-title">Widget 4</span>
-                    <RadarChart cx={230} cy={200} outerRadius={100} width={450} height={450} data={data}>
-                        <PolarGrid />
-                        <PolarAngleAxis dataKey="subject" />
-                        <PolarRadiusAxis />
-                        <Radar name="Natation" dataKey="natation" stroke="#83a6ed" fill="#83a6ed" fillOpacity={0.6} />
-                        <Radar name="Cyclisme" dataKey="cyclisme" stroke="#8dd1e1" fill="#8dd1e1" fillOpacity={0.6} />
-                        <Radar name="Course" dataKey="C" stroke="#8884d8" fill="#8884d8" fillOpacity={0.6} />
-                        <Legend/>
-                    </RadarChart>
+                    <span className="card-title">Calories </span>
+                    <ResponsiveContainer width="100%" height="100%" aspect={4.0/3.0}>
+                    <BarChart width={420} height={300} data={data} margin={{ top: 5, right: 30, left: 20, bottom: 5, }} barSize={20} >
+                        <XAxis dataKey="name" scale="point" padding={{ left: 70, right: 70 }} />
+                        <YAxis />
+                        <Tooltip />
+                        <CartesianGrid strokeDasharray="3 3" />
+                        <Bar dataKey="calories" fill="#8884d8" background={{ fill: '#eee' }} />
+                    </BarChart>
+                    </ResponsiveContainer>
                 </div>
             </div>
         </div>

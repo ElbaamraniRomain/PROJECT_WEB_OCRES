@@ -1,5 +1,5 @@
 import React from 'react';
-import {RadialBarChart, RadialBar, Legend} from 'recharts'
+import {RadialBarChart, RadialBar, Legend, ResponsiveContainer} from 'recharts'
 import { BiCycling } from 'react-icons/bi'
 import { BiSwim } from 'react-icons/bi'
 import { FaRunning } from 'react-icons/fa'
@@ -27,12 +27,14 @@ const Widget3 = () => {
     return(
         <div className="Widget section">
             <div className="card z-depth-0 Widget_1-summary">
-                <div className="card-content gray-text text-darken-3">
+                 <div className="card-content gray-text text-darken-3">
                     <span className="card-title">Distance parcourue</span>
-                    <RadialBarChart width={450} height={300} cx={150} cy={150} innerRadius={25} outerRadius={140} barSize={25} data={data}>
+                    <ResponsiveContainer width="100%" height="100%" aspect={4.0/3.0}>
+                    <RadialBarChart innerRadius={25} outerRadius={140} barSize={25} data={data}>
                         <RadialBar minAngle={15} label={{ position: 'insideStart', fill: '#fff' }} background clockWise dataKey="distance" />
-                        <Legend iconSize={15} width={120} height={140} layout="vertical" verticalAlign="middle" wrapperStyle={style}  />
+                        <Legend iconSize={15} />
                     </RadialBarChart>
+                    </ResponsiveContainer>
                     </div>
                 </div>
             </div>
