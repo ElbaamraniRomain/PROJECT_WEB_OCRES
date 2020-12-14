@@ -1,6 +1,6 @@
 # Projet de fin de semestre
 ## EL Baamrani Romain - Duong Pierre
-=======
+
 EL Baamrani Romain/Duong Pierre
 A lire impérativement avant de commencer quoi que ce soit, ce sont les règles que vous devrez appliquer tout au long du semestre:
 
@@ -27,15 +27,19 @@ Pour rappel, la probabilité de recevoir une réponse à un mail envoyé quelque
 
 ### EL Baamrani Romain - Duong Pierre
 
-![alt text](public/img/Dashboard.png)
-![alt text](public/img/Admin_login.png)
+![alt text](frontend/public/img/Dashboard.png)
+![alt text](frontend/public/img/Admin_login.png)
 
 ### Pour accéder aux storybooks
 ```shell
+$ cd .\frontend\
+```
+
+```shell
 $ npm run storybook
 ```
-![alt text](public/img/storybook_1.png)
-![alt text](public/img/storybook_2.png)
+![alt text](frontend/public/img/storybook_1.png)
+![alt text](frontend/public/img/storybook_2.png)
 
 ### installation du package pour le frontend et backend
 ```shell
@@ -66,19 +70,3 @@ $ npm run dev
 
 ### Trello
 lien: https://trello.com/b/P4PnWpMG/projet-web-frontend
-
-
-![alt text](public/img/Dashboard.png)
-![alt text](public/img/Admin_login.png)
-
-### Pour accéder aux storybooks
-$ npm run storybook
-
-![alt text](public/img/storybook_1.png)
-![alt text](public/img/storybook_2.png)
-
-
-
-### Trello
-lien: https://trello.com/b/P4PnWpMG/projet-web
-
