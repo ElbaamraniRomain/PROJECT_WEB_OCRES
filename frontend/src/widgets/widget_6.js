@@ -22,7 +22,7 @@ const Widget6 = () => {
         const to = from+1;
         const response = await fetch(`https://api.edamam.com/search?q=${query}&app_id=${APP_ID}&app_key=${APP_KEY}&from=${from}&to=${to}`);
         const data = await response.json();
-        console.log(data.hits[0]);
+        // console.log(data.hits[0]);
         setRecipes(data.hits);
     };
 

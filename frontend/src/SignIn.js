@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import  { Redirect } from 'react-router-dom'
 
 class SignIn extends Component{
     state = {
@@ -13,6 +14,10 @@ class SignIn extends Component{
     handlSubmit = (e) => {
         e.preventDefault();
         console.log(this.state);
+        if(this.state.email === "admin@gmail.com" && this.state.password === "admin"){
+            console.log('ok')
+            return  <Redirect to ={this.state.redirect}/>
+        }
         }
     render(){
         return(

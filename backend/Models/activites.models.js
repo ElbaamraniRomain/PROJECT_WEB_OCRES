@@ -10,23 +10,23 @@ const activiteSchema = new Schema({
     //  Date, String,
      type_activite: {
          type: String,
-         required: true,
+         required: false,
      },
      calories: {
-        type: String,
-        required: true,
+        type: Number,
+        required: false,
     },
     temps: {
-        type: String,
-        required: true,
+        type: Number,
+        required: false,
     },
     distance: {
-        type: String,
-        required: true,
+        type: Number,
+        required: false,
     },
-    Date: {
+    date: {
         type: Date,
-        required: true,
+        required: false,
     },
 });
 

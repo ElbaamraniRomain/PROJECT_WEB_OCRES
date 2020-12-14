@@ -1,5 +1,5 @@
 import React from 'react';
-import { LineChart, Line, XAxis, YAxis, Tooltip } from 'recharts';
+import { LineChart, Line, XAxis, YAxis, Tooltip, ResponsiveContainer  } from 'recharts';
 
 
 const data = [
@@ -17,7 +17,8 @@ const Widget2 = () => {
             <div className="card z-depth-0 Widget_1-summary">
                 <div className="card-content gray-text text-darken-3">
                     <span className="card-title">Performances</span>
-                        <LineChart width={520} height={300} data={data} margin={{ top: 5, right: 20, bottom: 5, left: 0 }}>
+                    <ResponsiveContainer width="100%" height="100%" aspect={3.0}>
+                        <LineChart data={data} margin={{ top: 5, right: 20, bottom: 5, left: 0 }}>
                             <Line type="monotone" dataKey="cyclisme" stroke="#0C00F6" />
                             <Line type="monotone" dataKey="course" stroke="#8884d8" />
                             <Line type="monotone" dataKey="natation" stroke="#83a6ed" />
@@ -26,7 +27,7 @@ const Widget2 = () => {
                             <YAxis />
                             <Tooltip />
                         </LineChart>
-                    {/* <p>Widget content</p> */}
+                    </ResponsiveContainer>
                 </div>
             </div>
         </div>

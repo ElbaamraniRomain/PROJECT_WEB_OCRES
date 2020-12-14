@@ -8,7 +8,7 @@ const adminLogin = () => {
                <NavLink to="/">Dashboard</NavLink>
            </li> */}
            <li>
-               <NavLink to="/SignIn">Admin Page</NavLink>
+               <NavLink to="/AddDataApi">Admin Page</NavLink>
            </li>
        </ul>
     

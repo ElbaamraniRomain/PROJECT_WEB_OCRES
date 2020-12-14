@@ -1,15 +1,9 @@
 import React from 'react';
-import { Pie, PieChart, Sector } from 'recharts';
+import { Pie, PieChart, Sector, ResponsiveContainer } from 'recharts';
 import simpleData from '../getBackend';
 
 const tempTime = 'm';
-const tempAct = "calories";
-
-const data = [
-    { name: 'Cyclisme', value: 400, fill: '#8dd1e1' },
-    { name: 'Natation', value: 300, fill: '#83a6ed' },
-    { name: 'Course', value: 300, fill: '#8884d8' },
-];
+const Act = "temps";
 
 const renderActiveShape = (props) => {
     const RADIAN = Math.PI / 180;
@@ -63,15 +57,21 @@ class Widget5 extends React.PureComponent {
     constructor(props) {
         super(props);
         this.state = {
-            gdata: ''
+            gdata: []
         };
     }
     async componentDidMount() {
-        const queryData = await simpleData(tempAct, tempTime);
+        const queryData = await simpleData(Act, tempTime);
         const gdata = [
-            { name: 'Cyclisme', value: queryData["cyclisme"], fill: '#8dd1e1' },
-            { name: 'Natation', value: queryData["natation"], fill: '#83a6ed' },
-            { name: 'Course', value: queryData["course"], fill: '#8884d8' },
+            {
+                name: 'Cyclisme', value: parseInt(queryData["cyclisme"]), fill: '#8dd1e1'
+            },
+            {
+                name: 'Natation', value: parseInt(queryData["natation"]), fill: '#83a6ed'
+            },
+            {
+                name: 'Course', value: parseInt(queryData["course"]), fill: '#8884d8'
+            },
         ];
         this.setState({ gdata });
 
@@ -91,20 +91,20 @@ class Widget5 extends React.PureComponent {
                 <div className="card z-depth-0 Widget_1-summary">
                     <div className="card-content gray-text text-darken-3">
                         <span className="card-title">Temps d'activité</span>
-                        <PieChart width={400} height={400}>
-                            <Pie
-                                activeIndex={this.state.activeIndex}
-                                activeShape={renderActiveShape}
-                                data={this.state.gdata}
-                                cx={200}
-                                cy={200}
-                                innerRadius={60}
-                                outerRadius={90}
-                                fill="#8884d8"
-                                dataKey="value"
-                                onMouseEnter={this.onPieEnter}
-                            />
-                        </PieChart>
+                        <ResponsiveContainer width="100%" height="100%" aspect={4.0 / 3.0}>
+                            <PieChart width={400} height={400}>
+                                <Pie
+                                    activeIndex={this.state.activeIndex}
+                                    activeShape={renderActiveShape}
+                                    data={this.state.gdata}
+                                    innerRadius={60}
+                                    outerRadius={90}
+                                    fill="#8884d8"
+                                    dataKey="value"
+                                    onMouseEnter={this.onPieEnter}
+                                />
+                            </PieChart>
+                        </ResponsiveContainer>
                     </div>
                 </div>
             </div>

@@ -1,5 +1,12 @@
 import axios from 'axios';
 
+function rangeSelect(e, text) {
+    e.preventDefault();
+    // filter = text;
+    console.log(text);
+}
+
+
 const simpleData = async (act, temps) => {
     const response = await axios.get(`http://localhost:8080/activite/${act}`, {
         headers: {
@@ -19,8 +26,8 @@ const simpleData = async (act, temps) => {
     for (let i = 0; i < data.length; i++) {
         sData[data[i]._id] = data[i].info;
     }
-  
+
     return sData;
 }
-
 export default simpleData
+module.export = { rangeSelect };
