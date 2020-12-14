@@ -1,7 +1,6 @@
 # Projet de fin de semestre
 ## EL Baamrani Romain - Duong Pierre
 
-EL Baamrani Romain/Duong Pierre
 A lire impérativement avant de commencer quoi que ce soit, ce sont les règles que vous devrez appliquer tout au long du semestre:
 
 <p align="center">
@@ -9,20 +8,13 @@ A lire impérativement avant de commencer quoi que ce soit, ce sont les règles 
 </p>
 
 ## Introduction
-
-Ce repo git contient deux repertoires. L'un concerne la partie backend et l'autre la partie frontend.
-
-Les deux repertoires ont été initialisé pour vous aider à démarrer le projet dans les meilleures conditions.
-
-Chacun de ces repertoires contient un README.md qui vous pouvez vous approprier. Nous vous encourageons à le faire en y mettant toute les informations nécessaires à la compréhension de votre projet
-
-## Instructions
-
-Les instructions sont à retrouver dans le pdf instruction.pdf.
-
-**Le non respect de ces instructions entraînera des pertes de points alors prenez le temps de tout lire et de poser des questions si vous ne comprenez pas**
-
-Pour rappel, la probabilité de recevoir une réponse à un mail envoyé quelques heures avant le rendu est très proche de 0.
+Notre projet porte sur la création d'un dashboard de suivit sportif avec react et une base de données mongodb. Il y a 6 widgets dont deux utilisant des Api extérieurs 
+widget 1: météo du lieu entrée dans la barre de recherche.
+widget 2: affichage des performances.
+widget 3: affichage de la distance parcourue pendant le mois.
+widget 4: affichage des calories dépecées 
+widget 5: affichage du temps consacré à chaque activité.
+widget 6: affichage d'une idée de recette en fonction des critères rentrées dans la barre de recherche.
 ## Documentation
 
 ### EL Baamrani Romain - Duong Pierre
