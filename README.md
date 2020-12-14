@@ -1,9 +1,7 @@
 # Projet de fin de semestre
-<<<<<<< HEAD
 ## EL Baamrani Romain - Duong Pierre
 =======
 EL Baamrani Romain/Duong Pierre
->>>>>>> 8e5afca1ca6d012482208d5449107b15ecc08557
 A lire impérativement avant de commencer quoi que ce soit, ce sont les règles que vous devrez appliquer tout au long du semestre:
 
 <p align="center">
@@ -25,3 +23,62 @@ Les instructions sont à retrouver dans le pdf instruction.pdf.
 **Le non respect de ces instructions entraînera des pertes de points alors prenez le temps de tout lire et de poser des questions si vous ne comprenez pas**
 
 Pour rappel, la probabilité de recevoir une réponse à un mail envoyé quelques heures avant le rendu est très proche de 0.
+## Documentation
+
+### EL Baamrani Romain - Duong Pierre
+
+![alt text](public/img/Dashboard.png)
+![alt text](public/img/Admin_login.png)
+
+### Pour accéder aux storybooks
+```shell
+$ npm run storybook
+```
+![alt text](public/img/storybook_1.png)
+![alt text](public/img/storybook_2.png)
+
+### installation du package pour le frontend et backend
+```shell
+$ cd .\frontend\
+```
+
+```shell
+$ npm install
+```
+
+```shell
+$ cd .\backend\
+```
+
+```shell
+$ npm install
+```
+
+### lancement de l'application
+
+```shell
+$ cd .\backend\
+```
+
+```shell
+$ npm run dev
+```
+
+### Trello
+lien: https://trello.com/b/P4PnWpMG/projet-web-frontend
+
+
+![alt text](public/img/Dashboard.png)
+![alt text](public/img/Admin_login.png)
+
+### Pour accéder aux storybooks
+$ npm run storybook
+
+![alt text](public/img/storybook_1.png)
+![alt text](public/img/storybook_2.png)
+
+
+
+### Trello
+lien: https://trello.com/b/P4PnWpMG/projet-web
+
